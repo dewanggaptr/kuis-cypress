@@ -46,6 +46,12 @@ Cypress.on('uncaught:exception', (err, runnable) => {
           cy.get('#v-pills-messages-tab').click()  
         })
       
+        //Like Webinar
+        it('Like Webinar', () => {
+          cy.visit('https://newwebionid.000webhostapp.com/index.php')
+          cy.get('[href="?page=detail&id=2"] > .col-lg-4 > .item-box > .card > .card-img-top').click()
+          cy.get('.form-vertical > button').click()
+        })
     })
   })
   
